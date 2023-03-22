@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: changes;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite; 
+    animation-direction:alternate;   
+}
+    
+@keyframes changes {
+    0%{
+        top: 0;
+        left: 0px;
+
+        
+    }
+    25%{
+        background-color: pink;
+        top: 500px;
+        left: 300px;
+        transform: rotate(90deg);
+    
+    }
+    50%{
+        background-color: blue;
+        animation-delay: 3s;
+        top: 0px;
+        left: 500px;
+    }
+    75%{
+        background-color: cyan;
+        animation-delay: 3s;
+        top: 500px;
+        left: 800px;
+    }
+    100%{
+        background-color: brown;
+        top: 0px;
+        left: 900px;
+    }
+    
+}
